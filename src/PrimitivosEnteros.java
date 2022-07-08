@@ -30,6 +30,13 @@ public class PrimitivosEnteros {
         System.out.println("El número máximo para long es: " + Long.MAX_VALUE);
         System.out.println("El número mínimo para long es: " + Long.MIN_VALUE);
 
+        var num5 = 56465;
+        System.out.println("num5 = " + num5);
+        System.out.println("Un int en byts es: " + Integer.BYTES);
+        System.out.println("Un int en bits es: " + Integer.SIZE);
+        System.out.println("El número máximo para int es: " + Integer.MAX_VALUE);
+        System.out.println("El número mínimo para int es: " + Integer.MIN_VALUE);
+
 
 
     }
