@@ -24,6 +24,6 @@ public class Primitivos_carateres {
         char car5 = '\n';
         //Salto de linea limpio
         char car6 = '\r';
-
+        //Agregamos otra linea
     }
 }
