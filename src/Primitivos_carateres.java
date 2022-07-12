@@ -13,5 +13,17 @@ public class Primitivos_carateres {
         char caracter_decimal = 64;
         System.out.println("caracter_decimal 64 es = " + caracter_decimal);
 
+        //Caracteres especiales en Unicode y númericos
+
+        char car2 = '\u0020';
+        //Tabulación
+        char car3 = '\t';
+        //Regreso
+        char car4 =  '\b';
+        //Salto de linea
+        char car5 = '\n';
+        //Salto de linea limpio
+        char car6 = '\r';
+
     }
 }
