@@ -26,6 +26,6 @@ public class Primitivos_carateres {
         char car6 = '\r';
         //Agregamos otra linea
         //Otra linea
-        
+        //Otra linea de muestra
     }
 }
