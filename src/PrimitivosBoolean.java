@@ -12,5 +12,8 @@ public class PrimitivosBoolean {
         boolean datologico3 = Boolean.FALSE.booleanValue();
         System.out.println("datologico3 = " + datologico3);
 
+        boolean datologico4 = 5 - 4 == 1;
+        System.out.println("El resultado lógico de la operación 5-4 = 1 es : " + datologico4);
+
     }
 }
