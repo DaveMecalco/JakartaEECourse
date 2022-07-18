@@ -1,3 +1,5 @@
+package Section1;
+
 public class VariablesPrimitivas {
     public static void main(String[] args) {
 
