@@ -13,5 +13,9 @@ public class VentanasDialogo {
         System.out.println("En octal es: " + Integer.toOctalString(numeroInt));
         System.out.println("En hexamdecimal es: " + Integer.toHexString(numeroInt));
         System.out.println("En binario es: " + Integer.toBinaryString(numeroInt));
+
+        //Para mostrar ventanas de mensajes Utilizamos el ShowMensageDialog de la Swing
+        String mensajeResultado = "En decimal es: " +numeroInt + "\n En octal es: " + Integer.toOctalString(numeroInt) + "\n En hexamdecimal es: " + Integer.toHexString(numeroInt) + "\n En binario es: " + Integer.toBinaryString(numeroInt);
+        JOptionPane.showMessageDialog(null, mensajeResultado);
     }
 }
