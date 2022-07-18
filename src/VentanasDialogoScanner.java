@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class VentanasDialogo {
+public class VentanasDialogoScanner {
     public static void main(String[] args) {
         //Utilizamos swing para hacer interactivas las aplicaciones
         String numeroStr = JOptionPane.showInputDialog(null, "Ingrese un número decimal: ");
