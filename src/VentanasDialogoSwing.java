@@ -28,19 +28,19 @@ public class VentanasDialogoSwing {
 
         //Conversión a diferentes bases
         //Para optimizar este fragmento, debemos guardarlo en variables diferentes y después concatenarlas
-        String strDec = "En decimal es: " +numeroInt;
+        String mensajeResultado = " En decimal es: " +numeroInt;
         //System.out.println("En decimal es: " +numeroInt);
-        String strOct = "En octal es: " + Integer.toOctalString(numeroInt);
+        mensajeResultado += "\n En octal es: " + Integer.toOctalString(numeroInt);
         //System.out.println("En octal es: " + Integer.toOctalString(numeroInt));
-        String strHex = "En hexadecimal es: " + Integer.toHexString(numeroInt);
+        mensajeResultado += "\n En hexadecimal es: " + Integer.toHexString(numeroInt);
         //System.out.println("En hexadecimal es: " + Integer.toHexString(numeroInt));
-        String strBin = "En binario es: " + Integer.toBinaryString(numeroInt);
+        mensajeResultado += "\n En binario es: " + Integer.toBinaryString(numeroInt);
         //System.out.println("En binario es: " + Integer.toBinaryString(numeroInt));
 
-        //Para mostrar ventanas de mensajes Utilizamos el ShowMensageDialog de la Swing
-        //String mensajeResultado = "En decimal es: " +numeroInt + "\n En octal es: " + Integer.toOctalString(numeroInt) + "\n En hexamdecimal es: " + Integer.toHexString(numeroInt) + "\n En binario es: " + Integer.toBinaryString(numeroInt);
-        //Linea mejor optimizadas en memoria
-        String mensajeResultado = strDec +"\n" + strOct + "\n" + strHex + "\n" + strBin;
+        //Para concatenar la misma variable debemos utilizar la variable y al asignar el valor debemos poner un +=
+        //Así reutilizamos la misma variable, cambiando el valor, en este caso, agregando más información.
+
+        //Linea mejor optimizada en memoria
         JOptionPane.showMessageDialog(null, mensajeResultado);
     }
 }
