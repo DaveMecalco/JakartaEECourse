@@ -98,5 +98,18 @@ public class EjemploString {
         //Imprimimos el resultado
         System.out.println("Resultado mediante lambdas = " + nombreCompletoComida2);
 
+
+
+
+        //Remplazar caracteres en Strings
+
+        //Para cambiar algún caracter en una variable String, debemos utilizar el método replace()
+        String ejemplo = "anita lava la tina";
+        System.out.println("ejemplo = " + ejemplo);
+
+        //Utilizamos replace en una nueva variable para observar los cambios con el método replace()
+        String ejemploModificado = ejemplo.replace("a","@");
+        System.out.println("ejemploModificado = " + ejemploModificado);
+
     }
 }
