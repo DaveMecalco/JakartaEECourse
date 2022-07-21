@@ -63,6 +63,40 @@ public class EjemploString {
 
         //Inmutabilidad de Strings
 
+        //Significa que no se puede modificar el valor del String o del objeto creado mediante estos mismos
+        //Ejemplo 1: si modificamos un string y queremos cambiar su argumento mediante objetos, esto no cambiara el valor asignado por defecto, pero si afectará a la instancia
+
+        String nombreComida = "Enchiladas";
+        String nombreComida2 = " con queso y crema";
+
+        //Estamos concatenando dos Strings con el método concact()
+        nombreComida.concat(nombreComida2);
+
+        System.out.println("nombreComida = " + nombreComida);
+        //El resultado es nombreComida = Enchiladas, solo se concatena en la instancia, pero el valor no se modifica, para ver la concatenación debemos crear una nueva variable que guarde esa instancia para observar el resultado
+
+        //Asignamos la concatenación para una variable nueva
+        String nombreCompletoComida = nombreComida.concat(nombreComida2);
+        //Imprimimos el resultado
+        System.out.println("Resultado mediante concat() = " + nombreCompletoComida);
+
+        //Ejemplo 2, mediante lambdas
+        //Con el método transform(), convertimos el string la literal y retornamos el valor nuevo, concatenando otro string
+        nombreComida.transform(c ->{
+            return c + nombreComida2;
+        });
+
+        //Imprimimos la varibale
+        System.out.println("nombreComida = " + nombreComida);
+
+        //Al igual que en el ejemplo pasado, no podemos visualizar el resultado completo porque no se modifica el valor del String, solo la instancia interna de la viarable
+        //Demos crear otra variable para que se le asigne la instancia del método
+        String nombreCompletoComida2 = nombreComida.transform(c1 -> {
+           return c1 + nombreComida2;
+        });
+
+        //Imprimimos el resultado
+        System.out.println("Resultado mediante lambdas = " + nombreCompletoComida2);
 
     }
 }
