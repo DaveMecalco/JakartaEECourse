@@ -1,4 +1,4 @@
-package Section1;
+package Section2;
 
 public class EjemploString {
     public static void main(String[] args) {
