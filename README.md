@@ -3,9 +3,8 @@
 > *Repositorio especifico de Java, creado para plasmar los conocimientos adquiridos en el curso Master Complete Java 2022
 
 Para este curso utilizamos el editor ItelliJ IDEA Community Edition.
-Descargarlo [aquí](https://www.jetbrains.com/es-es/idea/)
 
-![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/200px-IntelliJ_IDEA_Icon.svg.png)
+![Imagén de referencia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/200px-IntelliJ_IDEA_Icon.svg.png)
 
 Descargarlo [aquí](https://www.jetbrains.com/es-es/idea/)
 
