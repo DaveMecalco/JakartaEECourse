@@ -1,75 +1,27 @@
-# Curso de Java de cero a experto
+# Curso de Java de Cero a Experto
+
+    public static void main(String[] args) {  
+	    System.out.println("Bienvenido al mundo de Java");
+    }
 
 > *Repositorio especifico de Java, creado para plasmar los conocimientos adquiridos en el curso Master Complete Java 2022
 
 Para este curso utilizamos el editor ItelliJ IDEA Community Edition.
 
-![Imagén de referencia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/200px-IntelliJ_IDEA_Icon.svg.png)
+![Imagén de referencia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/100px-IntelliJ_IDEA_Icon.svg.png)
 
 Descargarlo [aquí](https://www.jetbrains.com/es-es/idea/)
 
-    public static void main(String[] args) {  
-	    System.out.println("Hola Mundo");
-    }
 
-# Files
+## Definiciones y Conceptos
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
-
-## Create files and folders
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-
-## Switch to another file
-
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
-
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+| Tipos de Variables Primitivas | Descripción | Tamaño en Memoria | Clase equivalente |
+|--|--|--|--|
+| boolean | Valor lógico | 1 bit | Boolean
+| char | Carácter | 16 bits | Character
+| byte | Entero muy pequeño | 8 bits | Byte
+| short | Entero pequeño | 16 bits | Short
+| int | Entero | 32 bits | Integer
+| long | Entero Grande | 64 bits | Long 
+| float | Número real precisión simple | 32 bits | Float
+| double | Número real precisión doble | 64 bits | Double
