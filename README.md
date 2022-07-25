@@ -15,6 +15,22 @@ Descargarlo [aquí](https://www.jetbrains.com/es-es/idea/)
 
 ## Definiciones y Conceptos
 
+**¿Qué es una variable?** 
+Son los más importantes de un lenguaje, son las entidades entidades, contienen valores o datos.
+
+Una declaración de una variable siempre contiene dos partes, el tipo de dato de la variable y su nombre:
+
+    TipoDato nombreVaribale;
+
+Reglas para definir una variable: 
+
+ 1. Por convención, los nombres de las variables empiezan con una letra minúscula.
+ 2. Debe ser un juego de caracteres comprendido en la codificación UNICODE.
+ 3. No puede ser el mismo que una palabra clave (reservadas del lenguaje Java).
+ 4. No debe tener el mismo nombre que otras variables cuyas declaraciones aparezcan en el mismo ámbito.
+ 5. Si una variable está compuesta de más de una palabra, como 'nombreDato', las palabras se ponen juntas y cada palabra después de la primera empieza con una letra mayúscula.
+ 6. Pueden comenzar por una letra, un guión bajo o un símbolo de dolar, siendo los siguientes caracteres letras o dígitos.
+
 | Tipos de Variables Primitivas | Descripción | Tamaño en Memoria | Clase equivalente |
 |--|--|--|--|
 | boolean | Valor lógico | 1 bit | Boolean
