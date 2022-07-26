@@ -1,36 +1,32 @@
-package Section1;
+package Section1_VariablesPrimitivas;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import javax.swing.*;
 
-public class VentanasDialogoScanner {
+public class VentanasDialogoSwing {
     public static void main(String[] args) {
-        //Para definir entradas de texto en consola debemos instanciar la clase Scanner
-        Scanner scanner = new Scanner(System.in);
-        //Mostramos un mensaje para dar la instrucción a realizar
-        System.out.println("Ingrese un número decimal: ");
-        //La variable scanner con el atributo nextLine() recibirá la información del usuario en String
-        //String numeroStr = scanner.nextLine();
+        //Utilizamos swing para hacer interactivas las aplicaciones
+        String numeroStr = JOptionPane.showInputDialog(null, "Ingrese un número decimal: ");
+        //Por defecto InputDialog es un String, por lo que debemos convertirlo a un entero
+        //Con la clase Integger y con el metodo parseInt convertimos un String a un Entero
+
         //Para manejar excepciones debemos utilizar try
         int numeroInt = 0;
+
         //Para inicializar un manejo de errores debemos declarar la variable fuera del contexto
         //Try significa intentar
         try {
             //Dentro de try debemos asignar la variable que deseamos manejar con errores
-            //numeroInt =Integer.parseInt(numeroStr);
-            //Para convertir directamente una linea String a Entero utilizamos scanner.nextInt()
-            numeroInt = scanner.nextInt();
+            numeroInt =Integer.parseInt(numeroStr);
             //Catch es donde manejaremos el error y daremos solución a excepción
-            //Para manejar errores con scanner.nextInt() debemos importar el paquete InputMismatchException
-        }catch (InputMismatchException e){
-            //NumberFormatException es el tipo de error que se maneja y es nombre de la excepción
+        }catch (NumberFormatException e){
+            //NumberFormatException es el tipo de error que se maneja y e es nombre de la excepción
             //Después mostramos un mensaje para manejar el error
-            System.out.println("Error, debe ingresar un número entero");
+            JOptionPane.showMessageDialog(null, "Error, debe ingresar un número entero");
             //Demos hacer una acción para volver a intentar manejar el error, esto es regresar al main
             main(args);
             //Después de regresar, para no caer en recursividad, debemos salir de este bucle
             System.exit(0);
-        }
+        };
 
         //Conversión a diferentes bases
         //Para optimizar este fragmento, debemos guardarlo en variables diferentes y después concatenarlas
@@ -46,7 +42,7 @@ public class VentanasDialogoScanner {
         //Para concatenar la misma variable debemos utilizar la variable y al asignar el valor debemos poner un +=
         //Así reutilizamos la misma variable, cambiando el valor, en este caso, agregando más información.
 
-        //Mostramos el resultado con salida en consola
-        System.out.println(mensajeResultado);
+        //Linea mejor optimizada en memoria
+        JOptionPane.showMessageDialog(null, mensajeResultado);
     }
 }

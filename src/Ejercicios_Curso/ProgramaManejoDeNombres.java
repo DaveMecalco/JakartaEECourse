@@ -1,4 +1,4 @@
-package Ejercicios;
+package Ejercicios_Curso;
 
 import java.util.Scanner;
 
@@ -46,8 +46,6 @@ public class ProgramaManejoDeNombres {
         //Imprimimos el resultado completo para el ejercicio
         System.out.println("El resultado final es:");
         System.out.println(nombreArreglado1 + "_" + nombreArreglado2 + "_" + nombreArreglado3);
-
-
 
     }
 }

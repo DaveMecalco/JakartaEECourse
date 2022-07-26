@@ -1,6 +1,4 @@
-package Section2;
-
-import java.util.Locale;
+package Section2_Strings;
 
 public class ValidacionStrings {
     public static void main(String[] args) {

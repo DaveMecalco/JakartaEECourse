@@ -1,4 +1,4 @@
-package Ejercicios;
+package Ejercicios_Curso;
 
 public class EjemploStringExtensionesArchivos {
     public static void main(String[] args) {

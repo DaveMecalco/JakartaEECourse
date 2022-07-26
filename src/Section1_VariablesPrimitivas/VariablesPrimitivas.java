@@ -1,4 +1,4 @@
-package Section1;
+package Section1_VariablesPrimitivas;
 
 public class VariablesPrimitivas {
     public static void main(String[] args) {

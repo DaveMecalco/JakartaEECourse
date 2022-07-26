@@ -1,4 +1,4 @@
-package Section2;
+package Section2_Strings;
 
 public class EjemploString {
     public static void main(String[] args) {
