@@ -42,3 +42,53 @@ Reglas para definir una variable:
 | long | Entero Grande | 64 bits | Long 
 | float | Número real precisión simple | 32 bits | Float
 | double | Número real precisión doble | 64 bits | Double
+
+
+## Introducción a Operadores.
+
+Java proporciona muchos tipos de operadores que se pueden usar según la necesidad. Se clasifican según la funcionalidad que brindan.
+
+Sirven para realizar cálculos matemáticos, comparar valores, para unir identificadores y literales, para formar expresiones lógica, toma de decisión etc.
+
+Tipos de Operadores:
+ - Aritméticos.
+ - Relacionales.
+ - Lógicos.
+ - Asignación.
+
+### Operadores Aritmeticos.
+
+Se utilizan para realizar operaciones aritméticas simples en tipos de datos primitivos
+
+| Descripción | Símbolo |
+|--|--|
+| Multiplicación | * |
+| División | / |
+| Modulo | % |
+| Suma | + |
+| Resta | - |
+| Incremento | ++ |
+| Decremento | -- |
+| Menos Unario | - |
+
+### Operadores Relacionales
+
+Se utilizan para comprobar relaciones de igualdad, mayor que, menor que. Devuelven un resultado booleano después de la comparación, true si la comparación fue exitosa y false en caso contrario.
+
+Se usan ampliamente en las sentencias if/else, así como en bucles.
+
+
+| Operador | Utilización |
+|--|--|
+| > | a > b |
+| >= | a >= b |
+| < | a < b |
+| <= | a <= b |
+| == | a == b |
+| != | a != b |
+
+
+
+
+
+
