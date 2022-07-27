@@ -1,6 +1,8 @@
 package Section3_OperadoresAritmeticos;
 
-public class EjemploOperadoresAritmeticos {
+import javax.swing.*;
+
+public class OperadoresAritmeticos {
     public static void main(String[] args) {
         //Inicializamos las variables en una sola línea
 
@@ -35,6 +37,22 @@ public class EjemploOperadoresAritmeticos {
 
         System.out.println("i / j = " + division );
         System.out.println("division2 = " + division2);
+
+        //Operador modulo
+        int resto = i % j;
+        System.out.println("resto = " + resto);
+
+        resto = 8 % 5;
+        System.out.println("resto = " + resto);
+
+        //Ejemplo de modulo
+
+        int esEntero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número: "));
+        if(esEntero % 2 == 0){
+            JOptionPane.showMessageDialog(null, "Es par el número");
+        }else {
+            JOptionPane.showMessageDialog(null, "Es impar el número");
+        }
 
     }
 }
