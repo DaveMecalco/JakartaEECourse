@@ -22,5 +22,9 @@ public class OperadoresLogicos {
         boolean b3 = i == j && k > l || m == false;
         System.out.println("b3 = " + b3);
 
+        //Las compuertas lógicas se evalúan igual que las aritmeticas, de izquierda a derecha
+        boolean b4 = i == j && (k < l || m == false);
+        System.out.println("b4 = " + b4);
+
     }
 }
