@@ -7,9 +7,6 @@ public class OperadoresRelacionales {
 
         int i = 3;
         byte j = 7;
-        float k = 1237e-7f;
-        double l = 2.1413e3;
-        boolean n = false;
 
         //Operador de igualdad ==
         boolean op1 = i == j;
