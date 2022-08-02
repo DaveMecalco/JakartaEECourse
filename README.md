@@ -164,6 +164,6 @@ Se usan ampliamente en las sentencias if/else, así como en bucles.
 
 
 
-
+## Operadores Lógicos
 
 
