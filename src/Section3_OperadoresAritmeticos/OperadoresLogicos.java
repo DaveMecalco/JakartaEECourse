@@ -26,5 +26,24 @@ public class OperadoresLogicos {
         boolean b4 = i == j && (k < l || m == false);
         System.out.println("b4 = " + b4);
 
+        //Precedencia de los operadores lógicos
+        //Si bien en Java el orden de ejecución de los operadores lógicos es de izquierda a derecha
+        //También tiene reglas y preferencias
+
+
+        //Primero, siempre se evalula la condición and y despues la or, no importando que esta se encuentre al final o enmedio de la asignación
+        boolean b5 = i == j && (k < l || m == true);
+        System.out.println("b5 = " + b5);
+
+        boolean b6 = i == j || (k < l && m == true);
+        System.out.println("b6 = " + b6);
+
+        boolean b7 = true || true && true;
+        System.out.println("b7 = " + b7);
+
+        boolean b8 = true || (false && false) || true;
+        System.out.println("b8 = " + b8);
+
+
     }
 }
