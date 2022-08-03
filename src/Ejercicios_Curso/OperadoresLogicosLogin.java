@@ -4,8 +4,15 @@ import java.util.Scanner;
 
 public class OperadoresLogicosLogin {
     public static void main(String[] args) {
-        String username = "davidmecalco";
-        String password = "123456";
+
+        String[] usernames = new String[2];
+        String[] passwords = new String[2];
+
+        usernames[0] = "davidmecalco";
+        usernames[1] = "admin";
+
+        passwords[0] = "123456";
+        passwords[1] = "123456";
 
         Scanner scanner = new Scanner(System.in);
 
@@ -16,15 +23,17 @@ public class OperadoresLogicosLogin {
 
         boolean esAutenticado = false;
 
-        if(username.equals(u) && password.equals(p)){
-            esAutenticado = true;
+        for (int i = 0; i < usernames.length; i++){
+            if (usernames[i].equals(u) && passwords[i].equals(p)){
+                esAutenticado = true;
+                break;
+            }
         }
 
         if (esAutenticado){
-            System.out.println("Bienvenido : ".concat(username).concat("!"));
-        }
-        else {
-            System.out.println("No coinciden las credenciales");
+            System.out.println("Bienvenido: ".concat(u));
+        }else {
+            System.out.println("Vuelva a intentarlo");
         }
 
     }
