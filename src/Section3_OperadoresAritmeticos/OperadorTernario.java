@@ -1,7 +1,6 @@
 package Section3_OperadoresAritmeticos;
 
 import javax.swing.*;
-import java.util.Scanner;
 
 public class OperadorTernario {
     public static void main(String[] args) {
@@ -26,8 +25,6 @@ public class OperadorTernario {
         double historia = 0.0;
 
         String estado = "";
-
-        Scanner scanner = new Scanner(System.in);
 
         matematicas = Double.parseDouble(JOptionPane.showInputDialog(null,"Ingresa la nota de matemáticas:"));
         System.out.println("matematicas = " + matematicas);

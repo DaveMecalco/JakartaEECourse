@@ -24,17 +24,15 @@ public class OperadoresLogicosLogin {
         boolean esAutenticado = false;
 
         for (int i = 0; i < usernames.length; i++){
-            if (usernames[i].equals(u) && passwords[i].equals(p)){
-                esAutenticado = true;
-                break;
-            }
+            esAutenticado = (usernames[i].equals(u) && passwords[i].equals(p)) ? true : esAutenticado;
         }
 
-        if (esAutenticado){
-            System.out.println("Bienvenido: ".concat(u));
-        }else {
-            System.out.println("Vuelva a intentarlo");
-        }
-
+//        if (esAutenticado){
+//            System.out.println("Bienvenido: ".concat(u));
+//        }else {
+//            System.out.println("Vuelva a intentarlo");
+//        }
+        String mensaje = esAutenticado ? "Bienvenido: ".concat(u) : "Vuelva a intentarlo";
+        System.out.println(mensaje);
     }
 }
