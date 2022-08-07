@@ -12,5 +12,16 @@ public class OperadorInstanceof {
         
         boolean b2 = numero instanceof Integer;
         System.out.println("b2 = " + b2);
+
+        boolean b3 = texto instanceof Object;
+        System.out.println("b3 = " + b3);
+        
+        boolean b4 = numero instanceof Number;
+        System.out.println("b4 = " + b4);
+
+        boolean b5 = numero instanceof Object;
+        System.out.println("b5 = " + b5);
+
+        
     }
 }
