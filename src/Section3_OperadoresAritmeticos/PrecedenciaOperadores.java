@@ -10,6 +10,11 @@ public class PrecedenciaOperadores {
         double promedio = (i + j + k) / 3d;
         System.out.println(promedio);
 
-        
+        promedio = i + j + k / 3d * 10;
+        System.out.println("promedio = " + promedio);
+
+        promedio = ++i + j-- + k / 3d * 10;
+        System.out.println("promedio = " + promedio);
+
     }
 }
