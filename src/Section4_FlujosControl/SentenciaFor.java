@@ -37,5 +37,18 @@ public class SentenciaFor {
             System.out.println(i + " - " + nombres[i]);
         }
 
+        System.out.println("");
+
+        //Bucles con saltos
+        //Utilizando if dentro d eun for
+        String[] nombres2 = {"David", "Anahi", "Paco", "Saul", "Pepe", "José", "Clara", "Maria", "Ismael", "Juan", "Pedro", "Bea", "Clara"};
+        int conunt2 = nombres.length;
+        for (int i = 0; i < conunt2; i++){
+            if(nombres2[i].equalsIgnoreCase("David") || nombres2[i].equalsIgnoreCase("Paco")){
+                continue;
+            }
+            System.out.println(i + " - " + nombres2[i]);
+        }
+
     }
 }
