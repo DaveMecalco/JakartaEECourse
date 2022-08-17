@@ -30,11 +30,21 @@ public class WrapperInteger {
         Integer valorIn = Integer.valueOf(valorST);
         System.out.println("valorIn = " + valorIn);
 
+        //Si convertimos un valor a uno más pequeño hay perdida de información, por lo tanto, no se debe hacer
+
         //Convertir un valor Integer a Short
         Short shortObj = intObj.shortValue();
         System.out.println("shortObj = " + shortObj);
+        
+        //Convertir un valor Int a Byte
+        
+        Byte byteObj = intObj.byteValue();
+        System.out.println("byteObj = " + byteObj);
 
+        //Lo que si se puede hacer, es convertir un valor más pequeño a uno más grande
 
+        Long longObj = intObj.longValue();
+        System.out.println("longObj = " + longObj);
 
 
     }
