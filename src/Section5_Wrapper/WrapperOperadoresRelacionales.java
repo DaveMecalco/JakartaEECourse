@@ -28,7 +28,7 @@ public class WrapperOperadoresRelacionales {
 
         //Podemos comprar los objetos con primitivos gracias al Autoboxing
         num2 = 500;
-        
+
         boolean condicion = num1.intValue() > num2.intValue();
         System.out.println("condicion = " + condicion);
     }
