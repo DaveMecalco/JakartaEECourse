@@ -16,6 +16,16 @@ public class WrapperBoolean {
         System.out.println("objBoolean3 = " + objBoolean3);
 
         System.out.println("Comprando dos objetos boolean: " + (objBoolean == objBoolean2));
+        System.out.println("Comprando dos objetos boolean: " + (objBoolean.equals(objBoolean2)));
+        System.out.println("Comprando dos objetos boolean: " + (objBoolean == objBoolean3));
+
+        //Para retornar un valor primitivo de un objeto
+
+        //Forma explicita
+        //Boolean primBoolean3 = objBoolean.booleanValue();
+
+        //Forma implicita
+        Boolean primBoolean2 = objBoolean2;
 
 
 
