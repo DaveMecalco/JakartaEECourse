@@ -14,5 +14,14 @@ public class AutoboxingInteger {
 
         System.out.println("suma = " + suma);
 
+        suma = 0;
+
+        for (Integer i: enteros) {
+            if (i % 2 == 0){
+                suma += i;
+            }
+        }
+        System.out.println("suma = " + suma);
+
     }
 }
