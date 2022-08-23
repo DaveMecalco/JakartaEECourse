@@ -8,6 +8,8 @@ public class PasarPorValor {
         test(i);
 
         //Se pasa el valor de la variable y no el objeto (referencia)
+
+        //Los variabales son inmutbales, retorna una nueva instancia
         System.out.println("finaliza el método main con el valor de i = " + i);
 
     }
