@@ -15,7 +15,7 @@ public class StringParseDate {
 
         System.out.println("Ingrese un fecha con el formato: yyyy-mm-dds");
 
-        //Para hacer el parce de un string debemos darle un formato y después utilizar un try
+        //Para hacer el parce de un string debemos darle un formato y después utilizgit ar un try
         try {
             Date fecha = format.parse(s.next());
             System.out.println("fecha = " + fecha);
