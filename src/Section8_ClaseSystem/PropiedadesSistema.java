@@ -31,8 +31,7 @@ public class PropiedadesSistema {
 
         //Para mostrar todas las configuraciones
         Properties properties = System.getProperties();
-        System.out.println("properties = " + properties);
-
+        properties.list(System.out);
 
 
     }
