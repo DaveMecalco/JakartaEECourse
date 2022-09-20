@@ -28,9 +28,15 @@ public class AsignarPropiedadesSistema {
 
             //Para agregar una nueva propiedad
             p.setProperty("mi.propiedad.personalizada","Mi valor guardado en el objeto properties");
+            System.setProperties(p);
 
             //Para combinar las propiedades del sistema y las personalizadas
-            System.setProperties(p);
+            Properties ps = System.getProperties();
+            System.out.println("ps = " + ps.getProperty("mi.propiedad.personalizada"));
+            System.out.println(System.getProperty("config.puerto.entrada"));
+            System.out.println(System.getProperty("otra"));
+            System.out.println(System.getProperty("config.texto.ambiente"));
+
 
             //Para mostrar todas las propiedades
             System.getProperties().list(System.out);
