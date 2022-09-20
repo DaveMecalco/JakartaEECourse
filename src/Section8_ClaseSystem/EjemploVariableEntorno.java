@@ -29,6 +29,12 @@ public class EjemploVariableEntorno {
         String path2 = varEnv.get("PATH");
         System.out.println("path2 = " + path2);
 
+        //Para enlistar todas las variables de ambiete del sistema:
+        System.out.println("<__________________ Lista de variables de ambiente del sistema __________________>");
+        for (String key : varEnv.keySet()){
+            System.out.println(key + " = " + varEnv.get(key));
+        }
+
 
     }
 }
