@@ -10,7 +10,7 @@ public class EjemploFuncionesTrigonometricas {
         //función coseno, también recibe el parametro en radianes
         double funsioncoseno = Math.cos(0.00);
         System.out.println("funsioncoseno = " + funsioncoseno);
-        
+
 
     }
 }
