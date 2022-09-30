@@ -16,5 +16,7 @@ public class EjemploTerminal {
 
         //Después de ejecutar el comando javac (Java compiler) debemos utilizar java y el nombre del archivo
 
+        //Para pasar parámetros para la ejecución, debemos realizar edicion de parameremtros en IDE
+
     }
 }
