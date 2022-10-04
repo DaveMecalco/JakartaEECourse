@@ -36,10 +36,36 @@ public class EjemploArrayFor {
 
         //Ciclo while
         int j = 0;
+
+        System.out.println("======= Ciclo While =======");
         while (j < productos.length){
             System.out.println("productos = " + productos[j]);
             j++;
         }
+
+        //Ciclo do while
+        j = 0;
+        System.out.println("======= Ciclo Do While =======");
+        do {
+            System.out.println("productos = " + productos[j]);
+            j++;
+        }while (j < productos.length);
+
+        //Arreglo de interos
+
+        int[] numeros = new int[10];
+
+        //Llenar automáticamente un arreglo utilizando un for
+
+        for (int k = 0; k < numeros.length; k++){
+            numeros[k] = k*2;
+        }
+        
+        //Mostramos el contenido del arreglo
+        for (int numero : numeros) {
+            System.out.println("numero = " + numero);
+        }
+
 
 
     }
