@@ -25,9 +25,16 @@ public class EjemploArrayForInverso {
 
         int total = productos.length;
         for (int i = 0; i < total; i++){
-            System.out.println("Para el indice: " + (total -1 - i) +  "el valor es: " + productos[total - 1 - i]);
+            System.out.println("Para el indice: " + (total -1 - i) +  " el valor es: " + productos[total - 1 - i]);
 
         }
+
+        System.out.println("======= Ciclo For 2 =======");
+        for (int i = total - 1; i >= 0; i--){
+            System.out.println("Para el indice: " + i + " el valor es: " + productos[i]);
+        }
+
+
 
     }
 }
