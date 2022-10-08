@@ -29,7 +29,8 @@ public class EjemploOrdenamietoBurbuja {
 
         //Asignamos el largo del array
         int total = productos.length;
-
+        //Implementamos un variable para resgistrar el número de iteraciones del arreglo
+        int contador = 0;
 
         //algoritmo de ordenamiento de burbuja
         for (int x = 0; x < total; x++){
@@ -38,16 +39,15 @@ public class EjemploOrdenamietoBurbuja {
                     String auxiliar = productos[x];
                     productos[x] = productos[y];
                     productos[y] = auxiliar;
-
                 }
+                contador++;
             }
         }
 
+        System.out.println("contador = " + contador);
 
         //Implementación del método
         //arregloInverso(productos);
-
-
 
         //Imprimimos el arreglo
         System.out.println("======= Ciclo For =======");
