@@ -12,6 +12,7 @@ public class EjemploMatrizSimetrica {
                 {4,5,6,7}
         };
 
+        //Ciclo while
         int i, j;
         i = 0;
         salir : while (i < matriz.length){
@@ -24,6 +25,16 @@ public class EjemploMatrizSimetrica {
                 j++;
             }
             i++;
+        }
+
+        //Ciclo for
+        salir2 : for (int i = 0; i < matriz.length; i++){
+            for (int j = 0; j < i; i++){
+                if (matriz[i][j] != matriz[j][i]){
+                    simentrica = false;
+                    break salir2;
+                }
+            }
         }
 
         if(simentrica == true){
