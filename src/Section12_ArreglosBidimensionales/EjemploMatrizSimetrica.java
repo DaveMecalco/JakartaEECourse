@@ -14,11 +14,12 @@ public class EjemploMatrizSimetrica {
 
         int i, j;
         i = 0;
-        while (i < matriz.length && simentrica == true){
+        salir : while (i < matriz.length){
             j = 0;
-            while (j < i && simentrica == true){
+            while (j < i){
                 if (matriz[i][j] != matriz[j][i]){
                     simentrica = false;
+                    break salir;
                 }
                 j++;
             }
