@@ -28,8 +28,8 @@ public class EjemploMatrizSimetrica {
         }
 
         //Ciclo for
-        salir2 : for (int i = 0; i < matriz.length; i++){
-            for (int j = 0; j < i; i++){
+        salir2 : for (i = 0; i < matriz.length; i++){
+            for (j = 0; j < i; i++){
                 if (matriz[i][j] != matriz[j][i]){
                     simentrica = false;
                     break salir2;
@@ -37,7 +37,7 @@ public class EjemploMatrizSimetrica {
             }
         }
 
-        if(simentrica == true){
+        if(simentrica){
             System.out.println("La matriz es simétrica");
         }else{
             System.out.println("La matriz no es simétrica");
