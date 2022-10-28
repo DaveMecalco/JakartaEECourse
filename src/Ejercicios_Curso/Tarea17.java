@@ -6,7 +6,7 @@ public class Tarea17 {
     public static void main(String[] args) {
 
         //Inicializamos el array
-        int[] histograma = new int[12];
+        int[] histograma = new int[20];
         //Clase Scanner
         Scanner s = new Scanner(System.in);
         //Ciclo for para recorrer el array y poblarlo
