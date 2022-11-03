@@ -2,7 +2,7 @@ package Ejercicios_Curso;
 
 import java.util.Scanner;
 
-public class Tarea18 {
+public class Tarea19 {
     public static void main(String[] args) {
 
         //N para definir el tamaño de la matriz
@@ -22,15 +22,15 @@ public class Tarea18 {
         }
 
         //Inicializamos el array de Strings
-        String[][] matrizX = new String[n][n];
+        int[][] matrizX = new int[n][n];
 
         //Ciclo flor para poblar la matriz con _
         for (int i = 0; i < matrizX.length; i++){
             for (int j = 0; j < matrizX[i].length; j++){
-                if ((i == j)||(j == n - i - 1)){
-                    matrizX[i][j] = "X";
+                if (j == 0 || (i == n / 2) || (j == (matrizX[i].length - 1) && i >= n/2)){
+                    matrizX[i][j] = 1;
                 }else {
-                    matrizX[i][j] = "_";
+                    matrizX[i][j] = 0;
                 }
             }
         }
