@@ -32,7 +32,7 @@ public class SentenciaWhile {
             if(j == 50){
                 prueba = false;
             }
-            System.out.println(j);
+            System.out.println("j = " + j);
             j++;
         }while (prueba);
 
