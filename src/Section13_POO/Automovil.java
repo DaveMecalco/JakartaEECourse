@@ -4,13 +4,13 @@ public class Automovil {
     public static void main(String[] args) {
 
         //Creamos el objeto de la clase tipoAutomovil de la clase TipoAutomovil
-        TipoAutomovil tipoAutomovil = new TipoAutomovil();
+        TipoAutomovil mazda = new TipoAutomovil();
 
         //Para traer los atributos de otra clase necesitamos llamar a la instancia, seguido de un punto y su atributo
-        tipoAutomovil.marca = "Mazda 3";
-        tipoAutomovil.color = "Gris";
-        tipoAutomovil.fabricante = "Mazada";
-        tipoAutomovil.cilindros = 2.0;
+        mazda.marca = "Mazda 3";
+        mazda.color = "Gris";
+        mazda.fabricante = "Mazada";
+        mazda.cilindros = 2.0;
 
         //Podemos hacer varios objetos apartir de la clase que estamos instanciando
         TipoAutomovil audi = new TipoAutomovil();
@@ -28,15 +28,9 @@ public class Automovil {
         System.out.println("audi.fabricante = " + audi.fabricante);
         System.out.println("audi.cilindros = " + audi.cilindros);
 
-        System.out.println("Para Mazada: ");
-        System.out.println("tipoAutomovil.marca = " + tipoAutomovil.marca);
-        System.out.println("tipoAutomovil.color = " + tipoAutomovil.color);
-        System.out.println("tipoAutomovil.fabricante = " + tipoAutomovil.fabricante);
-        System.out.println("tipoAutomovil.cilindros = " + tipoAutomovil.cilindros);
-
-
-
-
+        //Para llamar al método de otra clase, necesitamos le objeto instanciado seguido de un punto y después el método
+        System.out.println(audi.detalle());
+        System.out.println(mazda.detalle());
 
     }
 }
