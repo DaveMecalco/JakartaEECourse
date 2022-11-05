@@ -12,17 +12,17 @@ class TipoAutomovil {
     public String detalle(){
 
         //String Builder es para crear un objeto de tipo String
-        StringBuilder sb =  new StringBuilder();
 
         //Para acceder a los propios atributos de clase utilizamos this
-        sb.append("\n" + this.marca);
-        sb.append("\n" + this.color);
-        sb.append("\n" + this.fabricante);
-        sb.append("\n" + this.cilindros);
 
         //La palabra return nos permite reportar objetos o valore primitivos de la clase
-        return sb.toString();
-
+        return "\n" + this.marca +
+                "\n" + this.color +
+                "\n" + this.fabricante +
+                "\n" + this.cilindros;
     }
+
+
+    //Método con atributos
 
 }
