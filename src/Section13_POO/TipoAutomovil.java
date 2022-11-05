@@ -24,5 +24,8 @@ class TipoAutomovil {
 
 
     //Método con atributos
+    public String acelerar(int rpm){
+        return "El auto " + this.marca + " de " + this.cilindros + " cilindros " + " esta acelerando a " + rpm + " rpm";
+    }
 
 }

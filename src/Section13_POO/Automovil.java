@@ -31,6 +31,7 @@ public class Automovil {
         //Para llamar al método de otra clase, necesitamos le objeto instanciado seguido de un punto y después el método
         System.out.println(audi.detalle());
         System.out.println(mazda.detalle());
+        System.out.println(mazda.acelerar(300));
 
     }
 }
