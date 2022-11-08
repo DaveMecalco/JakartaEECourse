@@ -33,5 +33,11 @@ public class Automovil {
         System.out.println(mazda.detalle());
         System.out.println(mazda.acelerar(300));
 
+        //Método calcularConsumo
+        System.out.println("Kilómetros por litro " + mazda.calcularConsumo(300, 0.75f));
+
+        //Sobrecarga del método calcularConsumo
+        System.out.println("Kilómetros por litro " + mazda.calcularConsumo(300, 75));
+
     }
 }

@@ -6,6 +6,7 @@ class TipoAutomovil {
     String color;
     String fabricante;
     double cilindros;
+    int capacidadTanque = 40;
 
     //Para agregar métodos
     //Necesitamos un modificador de acceso public, static, private, final, default
@@ -26,6 +27,15 @@ class TipoAutomovil {
     //Método con atributos
     public String acelerar(int rpm){
         return "El auto " + this.marca + " de " + this.cilindros + " cilindros " + " esta acelerando a " + rpm + " rpm";
+    }
+
+    public float calcularConsumo(int km, float porcetanjeGasolina){
+        return km/(this.capacidadTanque * porcetanjeGasolina);
+    }
+
+    //Sobrecarga de métodos es cuando tenemos el mismo método pero con diferentes parametros
+    public float calcularConsumo(int km, int porcetanjeGasolina){
+        return km/(this.capacidadTanque * (porcetanjeGasolina / 100f));
     }
 
 }
