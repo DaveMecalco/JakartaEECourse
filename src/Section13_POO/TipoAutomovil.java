@@ -2,11 +2,32 @@ package Section13_POO;
 
 class TipoAutomovil {
 
-    String marca;
-    String color;
+    //Para quitar la visibilidad de un atributo lo modificamos con la palabra private
+    private String marca;
+    private String color;
     String fabricante;
     double cilindros;
     int capacidadTanque = 40;
+
+
+    //Para leer un atributo protegido, debemos emplear dos metedos el get y set
+    //get para leer
+    public String leerMarca(){
+        return this.marca;
+    }
+
+    public String leerColor(){
+        return this.color;
+    }
+
+    //set para modificar
+    public void asignarMarca(String marca){
+        this.marca = marca;
+    }
+
+    public void asignarColor(String color){
+        this.color = color;
+    }
 
     //Para agregar métodos
     //Necesitamos un modificador de acceso public, static, private, final, default
@@ -17,9 +38,7 @@ class TipoAutomovil {
         //Para acceder a los propios atributos de clase utilizamos this
 
         //La palabra return nos permite reportar objetos o valore primitivos de la clase
-        return "\n" + this.marca +
-                "\n" + this.color +
-                "\n" + this.fabricante +
+        return "\n" + this.fabricante +
                 "\n" + this.cilindros;
     }
 
