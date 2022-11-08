@@ -4,22 +4,26 @@ public class Automovil {
     public static void main(String[] args) {
 
         //Creamos el objeto de la clase tipoAutomovil de la clase TipoAutomovil
-        TipoAutomovil mazda = new TipoAutomovil();
+        TipoAutomovil mazda = new TipoAutomovil("Mazada3", "Gris");
 
         //Para traer los atributos de otra clase necesitamos llamar a la instancia, seguido de un punto y su atributo
-        mazda.asignarMarca("Mazda3");
-        mazda.asignarColor("Gris");
-        mazda.fabricante = "Mazada";
-        mazda.cilindros = 2.0;
+        mazda.setFabricante("Mazda");
+        mazda.setCilindros(2.0);
 
         //Podemos hacer varios objetos apartir de la clase que estamos instanciando
-        TipoAutomovil audi = new TipoAutomovil();
+        TipoAutomovil audi = new TipoAutomovil("A3", "Azul");
 
         //Igual podemos traer sus atributos y modificar sus valores para este objeto
-        audi.setColor("A3");
-        audi.setColor("Azul");
-        audi.fabricante = "Audi";
-        audi.cilindros = 4.0;
+        audi.setFabricante("Audi");
+        audi.setCilindros(2.5);
+
+
+        TipoAutomovil nisan = new TipoAutomovil();
+        nisan.setFabricante("Nisa");
+        nisan.setCilindros(2.0);
+        nisan.setColor("Rojo");
+        nisan.setMarca("Versa 2022");
+
 
         //Podemos imprimir en pantalla los valores del objeto
         System.out.println("Para Audi: ");
@@ -40,6 +44,12 @@ public class Automovil {
 
         //Sobrecarga del método calcularConsumo
         System.out.println("Kilómetros por litro " + mazda.calcularConsumo(300, 75));
+
+        //Para nisan utilizando la sobrecarga de constructores
+        System.out.println(nisan.getMarca());
+        System.out.println(nisan.getFabricante());
+        System.out.println(nisan.getColor());
+        System.out.println(nisan.getCilindros());
 
     }
 }

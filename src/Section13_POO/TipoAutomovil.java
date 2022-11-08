@@ -9,6 +9,15 @@ class TipoAutomovil {
     double cilindros;
     int capacidadTanque = 40;
 
+    //Para implementar con constructor explícito
+    public TipoAutomovil(String marca, String color){
+        this.marca = marca;
+        this.color = color;
+    }
+
+    public TipoAutomovil(){
+
+    }
 
     //Para leer un atributo protegido, debemos emplear dos metedos el get y set
     //get para leer
@@ -27,6 +36,22 @@ class TipoAutomovil {
 
     public void setColor(String color){
         this.color = color;
+    }
+
+    public String getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+
+    public double getCilindros() {
+        return cilindros;
+    }
+
+    public void setCilindros(double cilindros) {
+        this.cilindros = cilindros;
     }
 
     //Para agregar métodos
