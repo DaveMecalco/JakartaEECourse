@@ -12,20 +12,20 @@ class TipoAutomovil {
 
     //Para leer un atributo protegido, debemos emplear dos metedos el get y set
     //get para leer
-    public String leerMarca(){
+    public String getMarca(){
         return this.marca;
     }
 
-    public String leerColor(){
+    public String getColor(){
         return this.color;
     }
 
     //set para modificar
-    public void asignarMarca(String marca){
+    public void setMarca(String marca){
         this.marca = marca;
     }
 
-    public void asignarColor(String color){
+    public void setColor(String color){
         this.color = color;
     }
 

@@ -16,8 +16,8 @@ public class Automovil {
         TipoAutomovil audi = new TipoAutomovil();
 
         //Igual podemos traer sus atributos y modificar sus valores para este objeto
-        audi.asignarMarca("A3");
-        audi.asignarColor("Azul");
+        audi.setColor("A3");
+        audi.setColor("Azul");
         audi.fabricante = "Audi";
         audi.cilindros = 4.0;
 
@@ -27,11 +27,11 @@ public class Automovil {
         System.out.println("audi.cilindros = " + audi.cilindros);
 
         //Para llamar al método de otra clase, necesitamos le objeto instanciado seguido de un punto y después el método
-        System.out.println(audi.leerMarca());
-        System.out.println(mazda.leerColor());
+        System.out.println(audi.getColor());
+        System.out.println(mazda.getColor());
         System.out.println(audi.detalle());
-        System.out.println(mazda.leerMarca());
-        System.out.println(mazda.leerColor());
+        System.out.println(mazda.getMarca());
+        System.out.println(mazda.getMarca());
         System.out.println(mazda.detalle());
         System.out.println(mazda.acelerar(300));
 
