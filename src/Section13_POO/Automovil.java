@@ -1,10 +1,14 @@
 package Section13_POO;
 
+import java.util.Date;
+
 public class Automovil {
     public static void main(String[] args) {
 
         //Creamos el objeto de la clase tipoAutomóvil de la clase TipoAutomóvil
         TipoAutomovil mazda = new TipoAutomovil("Mazada3", "Gris");
+
+        Date fecha = new Date();
 
         //Para traer los atributos de otra clase necesitamos llamar a la instancia, seguido de un punto y su atributo
         mazda.setFabricante("Mazda");
@@ -19,6 +23,9 @@ public class Automovil {
         System.out.println(audi == audi2);
         //Equals para comparar objetos y su referencia en memoria
         System.out.println(audi.equals(audi2));
+
+        //Comparación de dos objetos distintos
+        System.out.println(audi.equals(fecha));
 
 
         //Igual podemos traer sus atributos y modificar sus valores para este objeto

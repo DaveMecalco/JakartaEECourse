@@ -93,6 +93,12 @@ class TipoAutomovil {
     //Override es una anotación que indica que se esta sobreescribiendo un método en tiempo de ejecución, sirve para documentar
     @Override
     public boolean equals(Object obj) {
+
+        //Realizar una excepción para comprar dos objetos distintos
+        if (!(obj instanceof TipoAutomovil)){
+            return false;
+        }
+
         //Realizar un cast objeto
         TipoAutomovil a = (TipoAutomovil) obj;
 
