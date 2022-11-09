@@ -2,7 +2,7 @@ package Section13_POO;
 
 class TipoAutomovil {
 
-    //Para quitar la visibilidad de un atributo lo modificamos con la palabra private
+    //Para quitar la visibilidad de un atributo lo modificamos con la palabra prívate
     private String marca;
     private String color;
     String fabricante;
@@ -19,6 +19,11 @@ class TipoAutomovil {
 
     }
 
+    public TipoAutomovil(String marca, String color, String fabricante){
+        //Para hacer referencia a un constructor se utiliza this(parametros del constructor)
+        this(marca, color);
+        this.fabricante = fabricante;
+    }
     //Para leer un atributo protegido, debemos emplear dos metedos el get y set
     //get para leer
     public String getMarca(){
@@ -62,7 +67,7 @@ class TipoAutomovil {
 
         //Para acceder a los propios atributos de clase utilizamos this
 
-        //La palabra return nos permite reportar objetos o valore primitivos de la clase
+        //La palabra return nos permite reportar objetos o valores primitivos de la clase
         return "\n" + this.fabricante +
                 "\n" + this.cilindros;
     }
@@ -82,4 +87,15 @@ class TipoAutomovil {
         return km/(this.capacidadTanque * (porcetanjeGasolina / 100f));
     }
 
+
+    //Polimorfismo de objetos
+
+    //Override es una anotación que indica que se esta sobreescribiendo un método en tiempo de ejecución, sirve para documentar
+    @Override
+    public boolean equals(Object obj) {
+        //Realizar un cast objeto
+        TipoAutomovil a = (TipoAutomovil) obj;
+
+        return (this.marca.equals(a.getMarca()) && this.color.equals(a.getColor()));
+    }
 }

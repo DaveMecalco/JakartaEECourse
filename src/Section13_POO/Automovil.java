@@ -3,15 +3,23 @@ package Section13_POO;
 public class Automovil {
     public static void main(String[] args) {
 
-        //Creamos el objeto de la clase tipoAutomovil de la clase TipoAutomovil
+        //Creamos el objeto de la clase tipoAutomóvil de la clase TipoAutomóvil
         TipoAutomovil mazda = new TipoAutomovil("Mazada3", "Gris");
 
         //Para traer los atributos de otra clase necesitamos llamar a la instancia, seguido de un punto y su atributo
         mazda.setFabricante("Mazda");
         mazda.setCilindros(2.0);
 
-        //Podemos hacer varios objetos apartir de la clase que estamos instanciando
+        //Podemos hacer varios objetos a partir de la clase que estamos instancia
         TipoAutomovil audi = new TipoAutomovil("A3", "Azul");
+
+        TipoAutomovil audi2 = new TipoAutomovil("A3", "Azul");
+
+        //Implementación de equals
+        System.out.println(audi == audi2);
+        //Equals para comparar objetos y su referencia en memoria
+        System.out.println(audi.equals(audi2));
+
 
         //Igual podemos traer sus atributos y modificar sus valores para este objeto
         audi.setFabricante("Audi");
@@ -19,7 +27,7 @@ public class Automovil {
 
 
         TipoAutomovil nisan = new TipoAutomovil();
-        nisan.setFabricante("Nisa");
+        nisan.setFabricante("Nisan");
         nisan.setCilindros(2.0);
         nisan.setColor("Rojo");
         nisan.setMarca("Versa 2022");
@@ -30,7 +38,7 @@ public class Automovil {
         System.out.println("audi.fabricante = " + audi.fabricante);
         System.out.println("audi.cilindros = " + audi.cilindros);
 
-        //Para llamar al método de otra clase, necesitamos le objeto instanciado seguido de un punto y después el método
+        //Para llamar al método de otra clase, necesitamos le objeto instance seguido de un punto y después el método
         System.out.println(audi.getColor());
         System.out.println(mazda.getColor());
         System.out.println(audi.detalle());
