@@ -20,11 +20,11 @@ class TipoAutomovil {
     }
 
     public TipoAutomovil(String marca, String color, String fabricante){
-        //Para hacer referencia a un constructor se utiliza this(parametros del constructor)
+        //Para hacer referencia a un constructor se utiliza this(parameters del constructor)
         this(marca, color);
         this.fabricante = fabricante;
     }
-    //Para leer un atributo protegido, debemos emplear dos metedos el get y set
+    //Para leer un atributo protegido, debemos emplear dos métodos el get y set
     //get para leer
     public String getMarca(){
         return this.marca;
@@ -82,7 +82,7 @@ class TipoAutomovil {
         return km/(this.capacidadTanque * porcetanjeGasolina);
     }
 
-    //Sobrecarga de métodos es cuando tenemos el mismo método pero con diferentes parametros
+    //Sobrecarga de métodos es cuando tenemos el mismo método pero con diferentes parámetros
     public float calcularConsumo(int km, int porcetanjeGasolina){
         return km/(this.capacidadTanque * (porcetanjeGasolina / 100f));
     }
@@ -94,6 +94,11 @@ class TipoAutomovil {
     @Override
     public boolean equals(Object obj) {
 
+        //Para comparar el mismo objeto
+        if (this == obj){
+            return true;
+        }
+
         //Realizar una excepción para comprar dos objetos distintos
         if (!(obj instanceof TipoAutomovil)){
             return false;
@@ -103,5 +108,17 @@ class TipoAutomovil {
         TipoAutomovil a = (TipoAutomovil) obj;
 
         return (this.marca.equals(a.getMarca()) && this.color.equals(a.getColor()));
+    }
+
+    //
+    @Override
+    public String toString() {
+        return "TipoAutomovil{" +
+                "marca='" + marca + '\'' +
+                ", color='" + color + '\'' +
+                ", fabricante='" + fabricante + '\'' +
+                ", cilindros=" + cilindros +
+                ", capacidadTanque=" + capacidadTanque +
+                '}';
     }
 }

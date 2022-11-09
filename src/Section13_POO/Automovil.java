@@ -27,6 +27,10 @@ public class Automovil {
         //Comparación de dos objetos distintos
         System.out.println(audi.equals(fecha));
 
+        //Método toString() para objetos
+        //Regresa la clase seguida de un @ y el identificador único
+        System.out.println(audi.toString());
+
 
         //Igual podemos traer sus atributos y modificar sus valores para este objeto
         audi.setFabricante("Audi");
