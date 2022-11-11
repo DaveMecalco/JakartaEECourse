@@ -5,6 +5,9 @@ public class AutomovilStatic {
 
         //Constructor de la clase TipoAutomovil
         TipoAutomovil automovil = new TipoAutomovil();
+        TipoAutomovil automovil2 = new TipoAutomovil();
+        TipoAutomovil automovil3 = new TipoAutomovil();
+        TipoAutomovil automovil4 = new TipoAutomovil();
 
         //Para traer atributos estáticos
         TipoAutomovil.colorMarca = "Verde";
@@ -18,13 +21,12 @@ public class AutomovilStatic {
         TipoAutomovil.setColorMarca2("Guinda");
         System.out.println(TipoAutomovil.getColorMarca2());
 
-        System.out.println("Te extraño mucho mi amor <3");
+        //Imprimos el ID del objeto con los atributos estáticos
+        System.out.println(automovil);
+        System.out.println(automovil2);
+        System.out.println(automovil3);
+        System.out.println(automovil4);
 
-        String amor = "Cómo te extraño mucho mi amorcito";
-        System.out.println(amor);
-
-        String otraVariable = "Aquí ponemos cualquier cosa";
-        System.out.println(otraVariable + 2);
 
     }
 }

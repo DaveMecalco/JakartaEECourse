@@ -2,12 +2,17 @@ package Section13_POO;
 
 class TipoAutomovil {
 
+    //Creación de un identificador cuando se cree una instancia
+    private int id;
+
     //Para quitar la visibilidad de un atributo lo modificamos con la palabra prívate
     private String marca;
     private String color;
     String fabricante;
     double cilindros;
     int capacidadTanque = 40;
+
+    private static int ultimoId;
 
 
     //Atributos estáticos
@@ -18,12 +23,13 @@ class TipoAutomovil {
 
     //Para implementar con constructor explícito
     public TipoAutomovil(String marca, String color){
+        this();
         this.marca = marca;
         this.color = color;
     }
 
     public TipoAutomovil(){
-
+        this.id = ++ultimoId;
     }
 
     public TipoAutomovil(String marca, String color, String fabricante){
@@ -33,6 +39,16 @@ class TipoAutomovil {
     }
     //Para leer un atributo protegido, debemos emplear dos métodos el get y set
     //get para leer
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getMarca(){
         return this.marca;
     }
@@ -128,6 +144,7 @@ class TipoAutomovil {
     @Override
     public String toString() {
         return "TipoAutomovil{" +
+                "Id='" + id + '\'' +
                 "marca='" + marca + '\'' +
                 ", color='" + color + '\'' +
                 ", fabricante='" + fabricante + '\'' +
