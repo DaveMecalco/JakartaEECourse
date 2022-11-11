@@ -18,6 +18,12 @@ class TipoAutomovil {
 
     private static int ultimoId;
 
+    //Parametrizar colores con final
+    public static final String COLOR_ROJO = "Rojo";
+    public static final String COLOR_VERDE = "Verde";
+    public static final String COLOR_AMARILLO = "Amarillo";
+    public static final String COLOR_AZUL = "Azul";
+
 
     //Atributos estáticos
     static String colorMarca = "Naranja";
