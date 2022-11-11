@@ -9,6 +9,10 @@ class TipoAutomovil {
     double cilindros;
     int capacidadTanque = 40;
 
+
+    //Atributos estáticos
+    static String colorMarca = "Naranja";
+
     //Para implementar con constructor explícito
     public TipoAutomovil(String marca, String color){
         this.marca = marca;
@@ -119,6 +123,7 @@ class TipoAutomovil {
                 ", fabricante='" + fabricante + '\'' +
                 ", cilindros=" + cilindros +
                 ", capacidadTanque=" + capacidadTanque +
+                ", colorMarca=" + colorMarca +
                 '}';
     }
 }
