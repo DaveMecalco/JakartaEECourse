@@ -13,6 +13,9 @@ class TipoAutomovil {
     //Atributos estáticos
     static String colorMarca = "Naranja";
 
+    //Atributo privado y static, se tiene que realizar mediante get y set
+    private static String colorMarca2 = "Verde";
+
     //Para implementar con constructor explícito
     public TipoAutomovil(String marca, String color){
         this.marca = marca;
@@ -62,6 +65,13 @@ class TipoAutomovil {
     public void setCilindros(double cilindros) {
         this.cilindros = cilindros;
     }
+
+    //Los métodos static para las variables privadas deben ser publicas
+    public static String getColorMarca2(){ return colorMarca2; }
+
+    //El método set para las variables prívate deben ser void y public
+    //Debemos referenciar la clase para realizar el set
+    public static void setColorMarca2(java.lang.String colorMarca2) { TipoAutomovil.colorMarca2 = colorMarca2;}
 
     //Para agregar métodos
     //Necesitamos un modificador de acceso public, static, private, final, default

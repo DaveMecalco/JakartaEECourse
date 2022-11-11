@@ -9,10 +9,14 @@ public class AutomovilStatic {
         //Para traer atributos estáticos
         TipoAutomovil.colorMarca = "Verde";
 
-        //Se puede realizar mediante el objeto
-        automovil.colorMarca = "Azul";
+        //Se puede realizar mediante el objeto, pero no es recomendable
+        // automovil.colorMarca = "Azul";
 
         System.out.println(automovil);
+
+        //Para acceder a los métodos static
+        TipoAutomovil.setColorMarca2("Guinda");
+        System.out.println(TipoAutomovil.getColorMarca2());
 
     }
 }
