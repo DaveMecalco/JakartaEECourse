@@ -2,6 +2,10 @@ package Section13_POO;
 
 class TipoAutomovil {
 
+    //Final, sígnica que vamos a crear atributos constantes, solo se pueden leer
+    public static final Integer VELOCIDAD_MAXIMA = 200;
+    //A diferencia de los demás atributos, final se escriben en mayúscula y van separadas con un _
+
     //Creación de un identificador cuando se cree una instancia
     private int id;
 

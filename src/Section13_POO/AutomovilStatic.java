@@ -27,6 +27,9 @@ public class AutomovilStatic {
         System.out.println(automovil3);
         System.out.println(automovil4);
 
+        //Imprimir una variable final
+        System.out.println(TipoAutomovil.VELOCIDAD_MAXIMA);
+
 
     }
 }
