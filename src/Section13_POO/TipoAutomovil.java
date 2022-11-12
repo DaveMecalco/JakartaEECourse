@@ -38,7 +38,7 @@ class TipoAutomovil {
     public TipoAutomovil(String marca, String color){
         this();
         this.marca = marca;
-        this.color = Color.AMARILLO;
+        this.color = Color.AZUL;
     }
 
     public TipoAutomovil(){
