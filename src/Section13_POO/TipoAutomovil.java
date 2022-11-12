@@ -11,7 +11,7 @@ class TipoAutomovil {
 
     //Para quitar la visibilidad de un atributo lo modificamos con la palabra prívate
     private String marca;
-    private String color;
+    private Color color;
     String fabricante;
     double cilindros;
     int capacidadTanque = 40;
@@ -24,6 +24,9 @@ class TipoAutomovil {
     public static final String COLOR_AMARILLO = "Amarillo";
     public static final String COLOR_AZUL = "Azul";
 
+    //Enum es una estructura parecida a las clases pero contiene constantes (atributos final)
+
+
 
     //Atributos estáticos
     static String colorMarca = "Naranja";
@@ -35,7 +38,7 @@ class TipoAutomovil {
     public TipoAutomovil(String marca, String color){
         this();
         this.marca = marca;
-        this.color = color;
+        this.color = Color.AMARILLO;
     }
 
     public TipoAutomovil(){
@@ -64,7 +67,7 @@ class TipoAutomovil {
     }
 
     public String getColor(){
-        return this.color;
+        return COLOR_ROJO;
     }
 
     //set para modificar
@@ -73,7 +76,7 @@ class TipoAutomovil {
     }
 
     public void setColor(String color){
-        this.color = color;
+        this.color = Color.AZUL;
     }
 
     public String getFabricante() {

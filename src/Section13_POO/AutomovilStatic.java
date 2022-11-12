@@ -18,7 +18,7 @@ public class AutomovilStatic {
         System.out.println(automovil);
 
         //Para acceder a los métodos static
-        TipoAutomovil.setColorMarca2(TipoAutomovil.COLOR_ROJO);
+        TipoAutomovil.setColorMarca2("Azul");
         System.out.println(TipoAutomovil.getColorMarca2());
 
         //Imprimos el ID del objeto con los atributos estáticos
