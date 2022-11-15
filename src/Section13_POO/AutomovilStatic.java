@@ -31,6 +31,16 @@ public class AutomovilStatic {
         //Imprimir los argumentos del enum
         System.out.println();
 
+        //Aplicar el enum
+        automovil.setCategoria(CategoriaAuto.AUDI);
+        CategoriaAuto tipoa = automovil.getCategoria();
+        System.out.println(tipoa.getNombre());
+        System.out.println(tipoa.getDescripcion());
+        System.out.println(tipoa.getNumeroPuertas());
+
+
+
+
 
     }
 }

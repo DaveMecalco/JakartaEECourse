@@ -25,6 +25,7 @@ class TipoAutomovil {
     public static final String COLOR_AZUL = "Azul";
 
     //Enum es una estructura parecida a las clases pero contiene constantes (atributos final)
+    private CategoriaAuto categoria;
 
 
 
@@ -102,6 +103,17 @@ class TipoAutomovil {
     //Debemos referenciar la clase para realizar el set
     public static void setColorMarca2(java.lang.String colorMarca2) { TipoAutomovil.colorMarca2 = colorMarca2;}
 
+    //Get y set del enum
+
+
+    public CategoriaAuto getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(CategoriaAuto categoria) {
+        this.categoria = categoria;
+    }
+
     //Para agregar métodos
     //Necesitamos un modificador de acceso public, static, private, final, default
     public String detalle(){
@@ -111,8 +123,7 @@ class TipoAutomovil {
         //Para acceder a los propios atributos de clase utilizamos this
 
         //La palabra return nos permite reportar objetos o valores primitivos de la clase
-        return "\n" + this.fabricante +
-                "\n" + this.cilindros;
+        return "\n" + this.getCategoria().getDescripcion();
     }
 
 
