@@ -10,10 +10,13 @@ public class EjemploAutoEnum {
         System.out.println(tipoa.getNombre());
         System.out.println(tipoa.getDescripcion());
 
+        automovil.setCategoria(CategoriaAuto.MAZDA);
+        CategoriaAuto tipob = automovil.getCategoria();
+
         //Iterar un enum con switch case
 
 
-        switch (tipoa){
+        switch (tipob){
             case DEPORTIVO :
                 System.out.println("El auto es deportivo");
                 break;
@@ -35,6 +38,17 @@ public class EjemploAutoEnum {
                 break;
             default:
                 System.out.println("No se encuentra el automobile seleccionado");
+        }
+
+        //Iterar un enum con un foreach
+        CategoriaAuto[] catAut = CategoriaAuto.values();
+        for (CategoriaAuto tipo1: catAut){
+            System.out.print(tipo1 + " => " + tipo1.name() + " " +
+                    tipo1.getNombre() + " " +
+                    tipo1.getDescripcion() + " " +
+                    tipo1.getNumeroPuertas());
+
+            System.out.println();
         }
 
 
