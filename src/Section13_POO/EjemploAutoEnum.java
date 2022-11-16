@@ -23,8 +23,16 @@ public class EjemploAutoEnum {
             case CONVERTIBLE:
                 System.out.println("El auto es un convertible");
                 break;
+            case SEDAN:
+                System.out.println("El auto es un sedan");
+                break;
+            case NISAN:
+                System.out.println("El auto es un nissan");
+                break;
             case MAZDA:
                 System.out.println("El auto es mazda 3");
+            case AUDI:
+                break;
             default:
                 System.out.println("No se encuentra el automobile seleccionado");
         }
