@@ -2,18 +2,24 @@ package Section13_POO;
 
 public enum Color {
     ROJO("Rojo"),
-    AZUL("Azul"),
     AMARILLO("Amarillo"),
-    VERDE("Verde"),
-    GRIS("Gris");
+    AZUL("Azul"),
+    BLANCO("Blanco"),
+    GRIS("Gris Oscuro"),
+    NARANJO("Naranja");
 
     private final String color;
 
-    Color(String color){
+    Color(String color) {
         this.color = color;
     }
 
     public String getColor() {
         return color;
+    }
+
+    @Override
+    public String toString() {
+        return this.color;
     }
 }

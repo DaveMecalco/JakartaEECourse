@@ -1,180 +1,34 @@
 package Section13_POO;
 
-class TipoAutomovil {
+public enum TipoAutomovil {
+    SEDAN("Sedan", "Auto mediano", 4),
+    STATION_WAGON("Station Wagon", "Auto grande", 5),
+    HATCHBACK("Hatchback", "Auto compacto", 5),
+    PICKUP("Pickup", "Camioneta", 4),
+    COUPE("Coupé", "Auto pequeño", 2),
+    CONVERTIBLE("Convertible", "Auto deportivo", 2),
+    FURGON("Furgón", "Auto utilitario", 3),
+    SUV("SUV", "Todo terreno deportivo", 5);
 
-    //Final, sígnica que vamos a crear atributos constantes, solo se pueden leer
-    public static final Integer VELOCIDAD_MAXIMA = 200;
-    //A diferencia de los demás atributos, final se escriben en mayúscula y van separadas con un _
+    private final String nombre;
+    private final int numeroPuerta;
+    private final String descripcion;
 
-    //Creación de un identificador cuando se cree una instancia
-    private int id;
-
-    //Para quitar la visibilidad de un atributo lo modificamos con la palabra prívate
-    private String marca;
-    private Color color;
-    String fabricante;
-    double cilindros;
-    int capacidadTanque = 40;
-
-    private static int ultimoId;
-
-    //Parametrizar colores con final
-    public static final String COLOR_ROJO = "Rojo";
-    public static final String COLOR_VERDE = "Verde";
-    public static final String COLOR_AMARILLO = "Amarillo";
-    public static final String COLOR_AZUL = "Azul";
-
-    //Enum es una estructura parecida a las clases pero contiene constantes (atributos final)
-    private CategoriaAuto categoria;
-
-
-
-    //Atributos estáticos
-    static String colorMarca = "Naranja";
-
-    //Atributo privado y static, se tiene que realizar mediante get y set
-    private static String colorMarca2 = "Verde";
-
-    //Para implementar con constructor explícito
-    public TipoAutomovil(String marca, String color){
-        this();
-        this.marca = marca;
-        this.color = Color.AZUL;
+    TipoAutomovil(String nombre, String descripcion, int numeroPuerta) {
+        this.nombre = nombre;
+        this.numeroPuerta = numeroPuerta;
+        this.descripcion = descripcion;
     }
 
-    public TipoAutomovil(){
-        this.id = ++ultimoId;
+    public String getNombre() {
+        return nombre;
     }
 
-    public TipoAutomovil(String marca, String color, String fabricante){
-        //Para hacer referencia a un constructor se utiliza this(parameters del constructor)
-        this(marca, color);
-        this.fabricante = fabricante;
-    }
-    //Para leer un atributo protegido, debemos emplear dos métodos el get y set
-    //get para leer
-
-
-    public int getId() {
-        return id;
+    public int getNumeroPuerta() {
+        return numeroPuerta;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getMarca(){
-        return this.marca;
-    }
-
-    public String getColor(){
-        return COLOR_ROJO;
-    }
-
-    //set para modificar
-    public void setMarca(String marca){
-        this.marca = marca;
-    }
-
-    public void setColor(String color){
-        this.color = Color.AZUL;
-    }
-
-    public String getFabricante() {
-        return fabricante;
-    }
-
-    public void setFabricante(String fabricante) {
-        this.fabricante = fabricante;
-    }
-
-    public double getCilindros() {
-        return cilindros;
-    }
-
-    public void setCilindros(double cilindros) {
-        this.cilindros = cilindros;
-    }
-
-    //Los métodos static para las variables privadas deben ser publicas
-    public static String getColorMarca2(){ return colorMarca2; }
-
-    //El método set para las variables prívate deben ser void y public
-    //Debemos referenciar la clase para realizar el set
-    public static void setColorMarca2(java.lang.String colorMarca2) { TipoAutomovil.colorMarca2 = colorMarca2;}
-
-    //Get y set del enum
-
-
-    public CategoriaAuto getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(CategoriaAuto categoria) {
-        this.categoria = categoria;
-    }
-
-    //Para agregar métodos
-    //Necesitamos un modificador de acceso public, static, private, final, default
-    public String detalle(){
-
-        //String Builder es para crear un objeto de tipo String
-
-        //Para acceder a los propios atributos de clase utilizamos this
-
-        //La palabra return nos permite reportar objetos o valores primitivos de la clase
-        return "\n" + this.getCategoria().getDescripcion();
-    }
-
-
-    //Método con atributos
-    public String acelerar(int rpm){
-        return "El auto " + this.marca + " de " + this.cilindros + " cilindros " + " esta acelerando a " + rpm + " rpm";
-    }
-
-    public float calcularConsumo(int km, float porcetanjeGasolina){
-        return km/(this.capacidadTanque * porcetanjeGasolina);
-    }
-
-    //Sobrecarga de métodos es cuando tenemos el mismo método pero con diferentes parámetros
-    public float calcularConsumo(int km, int porcetanjeGasolina){
-        return km/(this.capacidadTanque * (porcetanjeGasolina / 100f));
-    }
-
-
-    //Polimorfismo de objetos
-
-    //Override es una anotación que indica que se esta sobreescribiendo un método en tiempo de ejecución, sirve para documentar
-    @Override
-    public boolean equals(Object obj) {
-
-        //Para comparar el mismo objeto
-        if (this == obj){
-            return true;
-        }
-
-        //Realizar una excepción para comprar dos objetos distintos
-        if (!(obj instanceof TipoAutomovil)){
-            return false;
-        }
-
-        //Realizar un cast objeto
-        TipoAutomovil a = (TipoAutomovil) obj;
-
-        return (this.marca.equals(a.getMarca()) && this.color.equals(a.getColor()));
-    }
-
-    //
-    @Override
-    public String toString() {
-        return "TipoAutomovil{" +
-                "Id='" + id + '\'' +
-                "marca='" + marca + '\'' +
-                ", color='" + color + '\'' +
-                ", fabricante='" + fabricante + '\'' +
-                ", cilindros=" + cilindros +
-                ", capacidadTanque=" + capacidadTanque +
-                ", colorMarca=" + colorMarca +
-                '}';
+    public String getDescripcion() {
+        return descripcion;
     }
 }
